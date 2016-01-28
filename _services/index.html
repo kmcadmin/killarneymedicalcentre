@@ -10,7 +10,7 @@ header-image: cardiac_screening.jpg
 {% for service in service_items %}
 	{% if service.category %}
 		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-			<a href="{{service.url}}">
+			<a href="{{site.baseurl}}/{{service.url}}">
 				<div class="service-item">
 					<div class="service-item-content">
 						<h2>{{service.title}}</h2>
