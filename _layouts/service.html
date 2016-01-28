@@ -48,7 +48,7 @@ layout: default
         <ul>
         {% for service in site.services %}
           {% if service.category %}
-          <li href="#"><a href="{{service.url}}">{{service.title}}</a></li>
+          <li href="#"><a href="{{site.baseurl}}{{service.url}}">{{service.title}}</a></li>
           {% endif %}
         {% endfor%}
         </ul>
