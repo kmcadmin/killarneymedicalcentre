@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row service-header blueBG">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 service-header-title" >
+      <h1>{{page.title}}</h1>
+      <h2>{{page.subtitle}}</h2>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 service-header-image visible-lg visible-md">
+    	<picture>
+    	    <source media="(max-width: 767px)" srcset="{{site.baseurl}}/images/800/jpeg/{{ page.header-image }} 2x">
+    	    <source media="(min-width: 992px)" srcset="{{site.baseurl}}/images/600/jpeg/{{ page.header-image }}">
+    	    <source srcset="{{site.baseurl}}/images/800/jpeg/{{ page.header-image }}">
+    	    <img class="img-responsive" src="/images/440/jpeg/{{ page.header-image }}">
+    	</picture>
+    </div>
+  </div>    
+</div> 
+
+{{ content }}

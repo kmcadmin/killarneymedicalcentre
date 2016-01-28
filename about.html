@@ -1,0 +1,21 @@
+---
+layout: page
+title: About
+subtitle: Meet the team
+header-image: kmc_building_outside.jpg
+---
+<div class="container"></div>
+<div class="container"> 
+  <div class="row profile">
+  	{% for staff_member in site.staff %}
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 profile-photo">
+        <img src="{{site.baseurl}}/images/staff/{{staff_member.photo}}" class="img-responsive"/>
+        <p>{{ staff_member.qualifications }}</p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4 profile-text">      
+        <h2>{{ staff_member.name }}</h3>
+        {{ staff_member.content }}
+      </div>
+    {% endfor %}
+  </div>
+</div>

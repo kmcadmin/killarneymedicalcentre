@@ -1,0 +1,31 @@
+---
+layout: page
+title: Services
+subtitle: 
+header-image: cardiac_screening.jpg
+---
+<div class="container service-page">
+<div class="row service-items">
+{% assign service_items = site.services | sort: 'order' %}
+{% for service in service_items %}
+	{% if service.category %}
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<a href="{{service.url}}">
+				<div class="service-item">
+					<div class="service-item-content">
+						<h2>{{service.title}}</h2>
+						<h3>{{service.tagline}}</h3>
+							<picture>
+							    <source media="(max-width: 767.0px)" srcset="{{site.baseurl}}/images/440/jpeg/{{ service.image }}">
+							    <source media="(max-width: 1540.0px)" srcset="{{site.baseurl}}/images/600/jpeg/{{ service.image }}">
+							    <source media="(min-width: 2000.0px)" srcset="{{site.baseurl}}/images/800/jpeg/{{ service.image }}">
+							    <img class="img-responsive" src="{{site.baseurl}}/images/440/jpeg/{{ service.image }}">
+							</picture>
+					</div>
+				</div>
+			</a>
+		</div>
+	{% endif %}
+{% endfor %}
+</div>
+</div>

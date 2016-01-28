@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<div class="container carousel-container">
+
+<div id="owl-example" class="owl-carousel owl-theme">
+  
+{% assign service_items = site.services | sort: 'order' %}
+{% for service in service_items %}
+  {% if service.category %}
+	<a href="{{service.url}}">
+	<div class="item blueBG">
+		<div class="carousel-image-wrapper">
+        <picture>
+		    <source media="(max-width: 550.0px)" srcset="{{site.baseurl}}/images/440/jpeg/{{ service.image }}">
+		    <source media="(max-width: 768.0px)" srcset="{{site.baseurl}}/images/440/jpeg/{{ service.image }}">
+		    <source media="(max-width: 980.0px)" srcset="{{site.baseurl}}/images/600/jpeg/{{ service.image }}">
+		    <source media="(max-width: 1199.0px)" srcset="{{site.baseurl}}/images/440/jpeg/{{ service.image }}">
+		    <source media="(max-width: 1540.0px)" srcset="{{site.baseurl}}/images/600/jpeg/{{ service.image }}">
+		    <source media="(min-width: 2000.0px)" srcset="{{site.baseurl}}/images/800/jpeg/{{ service.image }}">
+		    <img class="img-responsive" src="{{site.baseurl}}/images/440/jpeg/{{ service.image }}">
+		</picture>
+        </div>
+        <div class="carousel-information">
+		    <h1>{{service.title}}</h1>
+		    <h2>{{service.tagline}}</h2>
+		    <p>{{service.excerpt}}</p>
+	    </div>
+    </div>
+   </a>
+   {% endif %}
+{% endfor %}
+
+</div> <!-- end of owl-carousel -->
+</div> <!-- end of carousel-container -->
+
+
+<div class="container">
+	<div class="row">
+		<h1 style="text-align: center">Our newest clinic...</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10 col-sm-12 col-xs-12 vasectomy-kerry">
+			<img src="/images/young_family.jpg" class="img-responsive" />
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-5">
+						<object id="logo" type="image/svg+xml" data="http://www.vasectomykerry.ie/images/vasectomy_kerry_logo.svg"></object>
+						<h4>For confidential enquiry or to book an appointment :</h4>
+						<h3>Tel: 064 6620628</h3>
+
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-7">
+						<h2>No-Scalpel Vasectomy</h2>
+						<p>Our no scalpel vasectomy is a 20 minute minor surgical procedure, performed under local anaesthetic, in a convenient, comfortable and confidential environment. No scalpel vasectomy is a safe minor surgical procedure. Side effects are few and rare. You can return to work and normal activity within a few days. Vasectomy is considered the most reliable form of long term contraception.</p>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row client-logos">	
+		<div class="col-xs-12 col-sm-3 col-md-3"><img style="padding-top: 20px;" src="/images/logos/liebherr.jpg"></div>
+		<div class="col-xs-12 col-sm-3 col-md-3"><img src="/images/logos/astellas.jpg"></div>
+	</div>
+</div>

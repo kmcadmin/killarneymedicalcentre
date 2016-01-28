@@ -1,0 +1,93 @@
+- title: "Vaccinations"
+  banner_image: flu_vaccine.jpg
+  procedures:
+    - name: "Flu Vaccine"
+      price: "€30"
+    - name: "Pneumonia Vaccine"
+      price: "€30"
+    - name: "Vac Hep A (Adult)"
+      price: "€55"
+    - name: "Vac Hep A (Child)"
+      price: "€45"
+    - name: "Vac Hep A + B (Adult)"
+      price: "€70"
+    - name: "Vac Hep B (Adult)"
+      price: "€40"
+    - name: "Vac Hep B (Child)"
+      price: "€30"
+    - name: "Vac Typhoid"
+      price: "€40"
+    - name: "Vac Yellow Fever"
+      price: "€40"
+    - name: "Tetanus"
+      price: "€25"
+    - name: "Revaxis"
+      price: "€45"
+
+- title: "STD Screening"
+  banner_image: 
+  procedures:
+    - name: "Examination, bloods, swabs and follow up visit"
+      price: "€95"
+
+- title: "Well Person Check Up"
+  banner_image: 
+  procedures:
+    - name: "Well Person Medical Examination"
+      price: "€120"
+
+- title: "Cardiac Screening"
+  banner_image: couple_jogging.jpg
+  procedures:
+    - name: "Cardiac Screening (Club Member)"
+      price: "€85"
+
+- title: "Consultations"
+  banner_image: male_doctor_explaining.jpg
+  procedures:
+    - name: "Standard Consultation"
+      price: "€40"
+    - name: "Standard Consultation + Bloods"
+      price: "€50"
+    - name: "Emergency Consultation"
+      price: "€50"
+    - name: "Student Consultation (Secondary school)"
+      price: "€25"
+    - name: "Student Consultation + Bloods"
+      price: "€35"
+    - name: "Family Consultation"
+      price: "€60"
+    - name: "House Call"
+      price: "€60"
+
+- title: "Miscellaneous Service Fees"
+  banner_image:
+  procedures:
+    - name: "Acupuncture"
+      price: "€60"
+    - name: "Ambulatory 24hr Blood Pressure Monitor"
+      price: "€50"
+    - name: "Bloods Only"
+      price: "€20"
+    - name: "Cryotherapy"
+      price: "€30"
+    - name: "Driver's Licence Standard"
+      price: "€40"
+    - name: "Ear Syringe"
+      price: "€25"
+    - name: "ECG"
+      price: "€30"
+    - name: "Implanon Insertion"
+      price: "€60"
+    - name: "Implanon Removal"
+      price: "€70"
+    - name: "Implanon Replacement (Removal & Insertion)"
+      price: "€90"
+    - name: "Nebuliser"
+      price: "€15"
+    - name: "Prescription Renewal"
+      price: "€15"
+    - name: "ERemoval of Sutures"
+      price: "€20"
+    - name: "Wound Dressings"
+      price: "€30"

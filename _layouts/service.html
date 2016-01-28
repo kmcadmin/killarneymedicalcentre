@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="container no-padding">
+  <ol class="breadcrumb">    
+    <li><a href="{{site.baseurl}}/services/index.html">Services</a></li>
+    <li class="active">{{page.title}}</li>
+  </ol>
+</div>
+
+<div class="container">
+  <div class="row service-header blueBG">
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 service-header-title" >
+      <h1>{{page.title}}</h1>
+      <h2>{{page.tagline}}</h2>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 service-header-image visible-lg visible-md visible-sm visible-xs">
+      <picture>
+          <source media="(max-width: 550.0px)" srcset="{{site.baseurl}}/images/440/jpeg/{{ page.image }}">
+          <source media="(max-width: 992.0px)" srcset="{{site.baseurl}}/images/800/jpeg/{{ page.image }}">
+          <img class="img-responsive" src="{{site.baseurl}}/images/440/jpeg/{{ page.image }}">
+      </picture>      
+    </div>
+  </div>
+</div> <!-- end of service container -->
+
+<div class="container service-content">
+  <div class="row">
+    <div class="col-lg-7 col-md-7 service-body">
+      {{ content }}
+    </div>
+    
+    <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+      
+      {% assign helplinks = page.helpfull_links %} 
+      <div class="helpful-links">
+        <h3>Helpful Links</h3>
+        <ul>
+          {% for link in helplinks %}
+          <li><a href="{{link.url}}">{{link.website}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="services-nav">
+        <h3>Services</h3>
+        <ul>
+        {% for service in site.services %}
+          {% if service.category %}
+          <li href="#"><a href="{{service.url}}">{{service.title}}</a></li>
+          {% endif %}
+        {% endfor%}
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

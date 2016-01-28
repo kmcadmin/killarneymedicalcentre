@@ -1,0 +1,42 @@
+---
+layout: page
+title: Fees
+subtitle: Our prices
+header-image: kmc_building_outside.jpg
+---
+
+<div class="container fee-content">
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+    	{% assign counter = 0 %}            
+        {% for item in site.data.fees %}
+	        <h3>{{ item.title }}</h3>
+	        <table class="table table-bordered">  
+	          <tbody> 
+	          	{% for procedure in item.procedures %}                       
+	            	<tr><td>{{ procedure.name }}</td><td>{{ procedure.price }}</td></tr>
+	            {% endfor %}
+	          </tbody>
+	        </table>
+	        
+	        {% if item.banner_image %}
+		        <div class="img-container">
+			        <picture>
+					    <source media="(max-width: 767px)" srcset="{{site.baseurl}}/images/800/jpeg/{{ item.banner_image }} 2x">
+					    <source media="(min-width: 992px)" srcset="{{site.baseurl}}/images/600/jpeg/{{ item.banner_image }}">
+					    <source srcset="{{site.baseurl}}/images/resized/800/jpeg/{{ item.banner_image }}">
+					    <img class="img-responsive" src="{{site.baseurl}}/images/440/{{ item.banner_image }}">
+					</picture>
+		        </div>
+	        {% endif %}
+
+	        {% if counter >= 3 %}
+	        	</div><div class="col-lg-6 col-md-6">
+	        {% endif %}
+
+	        {% assign counter = counter | plus: 1 %}
+
+        {% endfor %}
+    </div>
+  </div>
+</div>
