@@ -9,7 +9,7 @@ layout: default
 {% assign service_items = site.services | sort: 'order' %}
 {% for service in service_items %}
   {% if service.category %}
-	<a href="{{service.url}}">
+	<a href="{{site.baseurl}}{{service.url}}">
 	<div class="item blueBG">
 		<div class="carousel-image-wrapper">
         <picture>
