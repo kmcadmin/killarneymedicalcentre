@@ -2,7 +2,7 @@
 layout: service
 title: Child Health
 image: doctor_examining_child.jpg
-order: 0
+order: 6
 tagline: Looking after your little ones
 excerpt: All Of the doctors at Killarney Medical Centre have worked in hospital paediatrics and have a wealth of experience caring for children and advising parents in a primary care setting.
 homepage_slideshow: false
