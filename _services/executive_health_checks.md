@@ -2,17 +2,19 @@
 layout: service
 title: Executive Health Checks
 image: family_generation_portrait.jpg
-order: 1
-tagline: Promoting Wellness & Good Health
-excerpt: Well person checks are a specialised medical check-up, tailored to each patient which will provide you with a detailed snapshot of your general health.
+order: 2
+tagline: "Promoting Wellness & Good Health"
+excerpt: "Well person checks are a specialised medical check-up, tailored to each patient which will provide you with a detailed snapshot of your general health."
 homepage_slideshow: true
 men: true
 women: true
 category: preventative
-helpfull_links:
-- website : Example
-  url : http://www.example.com 
+helpfull_links: 
+  - website: Example
+    url: "http://www.example.com"
+published: true
 ---
+
 
 At Killarney Medical Centre we believe in helping you to maintain a healthy lifestyle by reinforcing health enriching habits and identifying those factors that potentially create future health risks. 
  
@@ -132,5 +134,3 @@ This health check is aimed at the 40yr., 50yr. & older age bracket, and is ideal
 
 Health Screening is eligible for Tax Relief. Log on to www.revenue.ie
 for a MED 1 form and information on how to Claim. Some Insurance companies reimburse their members for Health Screening Please check regarding your own personal account with your specific insurance provider
- 
-
