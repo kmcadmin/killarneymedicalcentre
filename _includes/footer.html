@@ -6,7 +6,6 @@
     <div class="row">
       <div class="col-lg-12 col-xs-12 col-sm-12 copyright">
         <p>&copy; {{ site.time | date: '%Y' }} Killarney Medical Centre</p>
-        <p>{{page.url}}</p>
       </div>
     </div>
   </div>
@@ -20,7 +19,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="{{ "/js/picturefill.min.js" | prepend: site.baseurl  }}" type="text/javascript"></script>
 
-{% if page.url == {{site.baseurl}} %}
+{% if page.url == "/index.html" or page.url == "/" %}
   <script src="{{ "/js/owl.carousel.min.js" | prepend: site.baseurl  }}" type="text/javascript"></script>
 
   <script type="text/javascript">
