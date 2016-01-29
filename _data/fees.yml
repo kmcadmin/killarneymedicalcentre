@@ -59,8 +59,6 @@
       price: "€60"
     - name: "House Call"
       price: "€60"
-    - name: "Tims new Item"
-      price: "100 euro"
 
 - title: "Miscellaneous Service Fees"
   banner_image:
